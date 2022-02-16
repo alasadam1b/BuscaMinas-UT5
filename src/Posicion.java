@@ -16,10 +16,6 @@ public class Posicion {
         return columna;
     }
 
-    public boolean equals(int fila, int columna) {
-        return this.fila == fila && this.columna == columna;
-    }
-
     public String toString() {
         return "{fila:" + this.fila + ",columna:" + this.columna + "}";
     }
