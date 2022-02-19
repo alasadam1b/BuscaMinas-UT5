@@ -7,11 +7,11 @@ public class Salida
     public void pinta(int[][] matriz) {
         StringBuilder lineaFormateada = new StringBuilder("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" + String.format("%4c", ' '));
         int numf = 0;
-        String separador = "     |";
+        StringBuilder separador = new StringBuilder("     |");
         for (int i = 0; i < matriz[0].length; i++) {
-            separador += "---|";
+            separador.append("---|");
         }
-        separador += "\n";
+        separador.append("\n");
         for (int f = 0; f < matriz.length; f++) {
             if(f == 0) {
                 int numc = 0;
@@ -38,6 +38,6 @@ public class Salida
             }
             lineaFormateada.append("\n");
         }
-        System.out.println(lineaFormateada.toString());
+        System.out.println(lineaFormateada);
     }
 }
